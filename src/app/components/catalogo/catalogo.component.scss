@@ -1,0 +1,59 @@
+.header {
+    padding-top: 72px;
+
+    h2 {
+        height: 39px;
+        color: var(--dark-grey);
+        text-align: left;
+        font: normal normal 300 32px/56px News Goth;
+        letter-spacing: -0.32px;
+        color: #3C3C3B;
+        text-transform: uppercase;
+        opacity: 1;
+    }
+
+    .linha {
+        border: 1px solid var(--dark-grey);
+        opacity: 0.2;
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+}
+
+.pastas {
+    margin-left: 0;
+
+    &_lista {
+        margin-right: 82px;
+    }
+
+    &_item {
+        width: 174px;
+        height: 140px;
+        background: transparent 0% 0% no-repeat padding-box;
+        opacity: 1;
+    }
+
+    a {
+        color: var(--dark-grey);
+        text-align: center;
+        font: normal normal bold 20px/24px Roboto Slab;
+        letter-spacing: -0.5px;
+        color: #3C3C3B;
+        opacity: 1;
+        text-decoration: none;
+    }
+
+    a:hover{
+        cursor: pointer;
+        color: var(--azul);
+    }
+
+    a:hover img{
+        animation: foldersScaleUp 0.3s ease-out forwards;
+    }
+
+    img{
+        margin-bottom: 36px;
+    }
+}

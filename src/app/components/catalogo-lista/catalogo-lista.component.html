@@ -1,0 +1,28 @@
+<!-- <app-navbar></app-navbar> -->
+<div class="main-bg"></div>
+<div class="main container-fluid">
+    <div class="header d-flex align-items-center mb-5">
+        <h2 class="col-auto">Catálogos e flyers > {{catalogos[0].nome}} > Pasta {{documentoId}} </h2>
+        <div class="linha col"></div>
+    </div>
+
+    <div class="tabela">
+        <table class="table table-striped table-responsive">
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th class="text-center" scope="col">Tamanho do arquivo</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let flyer of catalogos[0].documentos[+documentoId].flyers">
+                    <td>{{flyer.nome}}</td>
+                    <td class="text-center">{{flyer.tamanho}}</td>
+                    <td class=""><a href="" download="../../../assets/images/buttons/Caminho 8.png"><img src="../../../assets/images/buttons/Caminho 8.png" alt=""></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

@@ -1,0 +1,28 @@
+version: '3' 
+services: 
+  angular-app: 
+    build: 
+      context: . 
+      dockerfile: Dockerfile 
+    ports: 
+      - "4200:4200" 
+    depends_on: 
+      - json-server 
+    networks: 
+      - mynetwork 
+
+  json-server: 
+    image: clue/json-server
+    ports: 
+      - "3000:80" 
+    volumes: 
+      - .\data\db.json:/data/db.json
+    networks: 
+      - mynetwork 
+
+networks: 
+  mynetwork:
+    driver: bridge
+
+
+    # docker-compose up -d

@@ -1,0 +1,15 @@
+.main-bg {
+    background-color: #E9E9E9;
+    width: 100%;
+    top: 78px;
+    height: calc(100vh - 78px);
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+    overflow-wrap: break-word;
+}
+
+.main-container{
+    margin-left: 118px;
+    margin-right: 118px;
+}

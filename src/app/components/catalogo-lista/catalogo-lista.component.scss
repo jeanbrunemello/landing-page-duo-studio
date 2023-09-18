@@ -1,0 +1,57 @@
+.header {
+    padding-top: 72px;
+
+    h2 {
+        height: 39px;
+        color: var(--dark-grey);
+        text-align: left;
+        font: normal normal 300 32px/56px News Goth;
+        letter-spacing: -0.32px;
+        color: #3C3C3B;
+        text-transform: uppercase;
+        opacity: 1;
+    }
+
+    .linha {
+        height: 0px;
+        border: 1px solid var(--dark-grey);
+        border: 1px solid #3C3C3B;
+        opacity: 0.2;
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+}
+
+.tabela {
+    margin-top: 64px;
+
+    th {
+        height: 26px;
+        color: var(--dark-grey);
+        text-align: left;
+        font: normal normal bold 20px/24px Roboto Slab;
+        letter-spacing: -0.5px;
+        color: #3C3C3B;
+        opacity: 1;
+        padding: 12px;
+    }
+
+    td {
+        width: 82px;
+        height: 48px;
+        color: var(--dark-grey);
+        text-align: left;
+        font: normal normal normal 18px/24px Roboto Slab;
+        letter-spacing: -0.45px;
+        color: #3C3C3B;
+        opacity: 1;
+        padding: 12px;
+        margin-left: 32px;
+    }
+
+    td>a>img {
+        float: right;
+        margin-left: 24px;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,17 @@
+<!-- <app-navbar></app-navbar> -->
+<div class="main">
+    <div class="header d-flex align-items-center mb-5">
+        <h2 class="col-auto">Catálogos e flyers</h2>
+        <div class="linha col"></div>
+    </div>
+
+    <div class="pastas">
+        <ul class="d-flex flex-wrap">
+            <li class="pastas_lista mb-5 mt-5 " *ngFor="let item of catalogos">
+                <a class="pastas_nome" class="pastas_item d-flex flex-column align-items-center"
+                    routerLink="/catalogos/exibir/{{item.id}}"><img src="../../../assets/images/icons/folder.svg" alt="">{{
+                    item.nome }} </a>
+            </li>
+        </ul>
+    </div>
+</div>

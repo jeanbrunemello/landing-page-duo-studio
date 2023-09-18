@@ -1,0 +1,64 @@
+<div class="main">
+    <div class="flare-bg">
+        <div class="flex-form">
+            <div class="d-flex align-items-center v-hight">
+                <div class="box-bg col-12 col-sm-11 col-md-9 col-lg-12 col-xl-9 col-xxl-8">
+                    <div class=" banner-content mb-5">
+                        <img class="logo mt-5 mb-5" src="../../../assets/images/logos/Güntner_logo_white.png" alt="">
+                        <h1 class="mb-4">Liderança em soluções de engenharia</h1>
+                        <p class="mb-5">Trabalhamos envolvidos em diversas áreas de atuação, como manter os alimentos
+                            frescos,
+                            fornecer
+                            temperaturas interiores confortáveis para edifícios comerciais e permitir a produção de
+                            energia
+                            renovável.</p>
+                        <h3 class="mb-3">ACESSE ABAIXO NOSSOS MATERIAIS ÚTEIS</h3>
+                        <ul>
+                            <li class="d-flex flex-column">
+                                <a class="mb-2" routerLink="/catalogos/exibir"><img class=""
+                                        src="../../../assets/images/buttons/Caminho 8.svg" alt="">Catálogo e Flyers</a>
+                                <a class="mb-2" routerLink="/IOMs"><img
+                                        src="../../../assets/images/buttons/Caminho 8.svg" alt="">IOMs</a>
+                                <a class="mb-2" routerLink="/instalation"><img
+                                        src="../../../assets/images/buttons/Caminho 8.svg" alt="">Quick
+                                    Instalation</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container col col-sm-10 col-md-8 col-lg-4 col-xxl-4 form-box  pb-5 mb-4">
+                <h3 class="mb-3">TEM ALGUMA DÚVIDA OU PRECISA DE ALGUM OUTRO MATERIAL ESPECÍFICO?</h3>
+                <p class="mb-4">Solicite abaixo</p>
+                <form [formGroup]="contatoForm" (ngSubmit)="enviarFormulario()">
+                    <small class="form-erro"
+                        *ngIf="contatoForm.get('nome')?.invalid && (contatoForm.get('nome')?.dirty || contatoForm.get('nome')?.touched)">Insira
+                        um nome com ao menos três letras</small>
+                    <input class="form-control" type="text" placeholder="Nome" formControlName="nome">
+                    <small class="form-erro"
+                        *ngIf="contatoForm.get('telefone')?.invalid && (contatoForm.get('telefone')?.dirty || contatoForm.get('telefone')?.touched)">Informe
+                        um telefone válido</small>
+                    <input class="form-control" type="text" placeholder="Telefone" formControlName="telefone"
+                        maxlength="9">
+                    <small class="form-erro"
+                        *ngIf="contatoForm.get('email')?.invalid && (contatoForm.get('email')?.dirty || contatoForm.get('email')?.touched)">Insira
+                        um email válido</small>
+                    <input class="form-control" type="text" placeholder="E-mail" formControlName="email">
+                    <small class="form-erro"
+                        *ngIf="contatoForm.get('assunto')?.invalid && (contatoForm.get('assunto')?.dirty || contatoForm.get('assunto')?.touched)">Preencha
+                        o assunto que deseja tratar</small>
+                    <input class="form-control" type="text" placeholder="Assunto" formControlName="assunto">
+                    <small class="form-erro"
+                        *ngIf="contatoForm.get('mensagem')?.invalid && (contatoForm.get('mensagem')?.dirty || contatoForm.get('mensagem')?.touched)">Não
+                        esqueça de nos enviar sua mensagem</small>
+                    <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Mensagem"
+                        formControlName="mensagem"></textarea>
+                    <button class="btn-submit " type="submit" [disabled]="contatoForm.invalid">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="d-flex justify-content-center align-items-center">
+   <a href="https://duo.studio/"> <img src="../../../assets/images/logos/duo.svg" alt=""></a>
+</footer>

@@ -1,0 +1,26 @@
+.main-bg {
+    background-color: red;
+    opacity: 0.2;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.main {
+    text-align: center;
+    font: normal normal 300 40px/56px News Goth;
+    letter-spacing: -0.4px;
+    color: black(0, 0%, 100%, 1);
+    opacity: 1;
+    color: var(--dark-grey);
+
+    h1 {
+        font-size: 60px;
+        color: var(--azul);
+    }
+video{
+    border: 1px solid var(--azul);
+}
+}
