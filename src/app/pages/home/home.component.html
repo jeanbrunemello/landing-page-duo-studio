@@ -38,7 +38,7 @@
                     <small class="form-erro"
                         *ngIf="contatoForm.get('telefone')?.invalid && (contatoForm.get('telefone')?.dirty || contatoForm.get('telefone')?.touched)">Informe
                         um telefone válido</small>
-                    <input class="form-control" type="text" placeholder="Telefone" formControlName="telefone"
+                    <input class="form-control" type="number" placeholder="Telefone" formControlName="telefone"
                         maxlength="9">
                     <small class="form-erro"
                         *ngIf="contatoForm.get('email')?.invalid && (contatoForm.get('email')?.dirty || contatoForm.get('email')?.touched)">Insira
@@ -60,5 +60,5 @@
     </div>
 </div>
 <footer class="d-flex justify-content-center align-items-center">
-   <a href="https://duo.studio/"> <img src="../../../assets/images/logos/duo.svg" alt=""></a>
+    <a href="https://duo.studio/"> <img src="../../../assets/images/logos/duo.svg" alt=""></a>
 </footer>

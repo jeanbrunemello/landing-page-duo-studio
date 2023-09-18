@@ -25,7 +25,6 @@ export class CatalogoDocumentosComponent implements OnInit {
     this.catalogoService.getCatalogoById(parseInt(this.activatedRouteId!)).subscribe((resposta) => {
       this.catalogos = [];
       this.catalogos.push(resposta)
-      console.log(this.catalogos)
     })
   }
 }

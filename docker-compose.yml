@@ -25,4 +25,5 @@ networks:
     driver: bridge
 
 
-    # docker-compose up -d
+    #Comando para subir o projeto em um container docker: docker-compose up -d
+    #Comando para interromper a execução dos containeres: docker-compose down

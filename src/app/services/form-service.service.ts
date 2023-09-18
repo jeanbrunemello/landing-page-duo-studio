@@ -8,7 +8,7 @@ export class FormServiceService {
   private formAPI = 'http://localhost:3000/contato/';
 
   constructor(private http: HttpClient) { }
-id = 1
+id = 0
   getAllContatos() {
     return this.http.get(this.formAPI);
   }
