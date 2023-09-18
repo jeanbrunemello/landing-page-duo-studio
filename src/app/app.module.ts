@@ -12,6 +12,8 @@ import { CatalogoDocumentosComponent } from './components/catalogo-documentos/ca
 import { CatalogoListaComponent } from './components/catalogo-lista/catalogo-lista.component';
 import { MateriaisComponent } from './pages/materiais/materiais.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { NgxMaskModule } from 'ngx-mask';
+
 
 @NgModule({
   declarations: [
@@ -22,13 +24,14 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     CatalogoDocumentosComponent,
     CatalogoListaComponent,
     MateriaisComponent,
-    NotFoundComponent
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxMaskModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

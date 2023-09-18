@@ -6,10 +6,15 @@
     position: absolute;
     z-index: -1;
     opacity: 0.2;
-    overflow-wrap: break-word;
 }
 
-.main-container{
+.main-container {
     margin-left: 118px;
     margin-right: 118px;
+}
+
+@media (max-width: 575px) {
+    .main-bg {
+        height: auto;
+    }
 }

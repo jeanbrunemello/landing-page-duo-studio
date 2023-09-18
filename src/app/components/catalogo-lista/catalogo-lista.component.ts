@@ -31,9 +31,6 @@ export class CatalogoListaComponent {
     this.catalogoService.getCatalogoById(parseInt(this.activatedRouteId!)).subscribe((resposta) => {
       this.catalogos = [];
       this.catalogos.push(resposta)
-      console.log(this.catalogos)
-
-      console.log(this.catalogos[0].documentos[2].Flyers)
     })
   }
 }

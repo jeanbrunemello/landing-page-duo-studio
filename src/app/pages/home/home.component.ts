@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   contatoForm: FormGroup = this.formBuilder.group({
     id: 0,
     nome: ['', [Validators.required, Validators.minLength(3)]],
-    telefone: ['', [Validators.required, Validators.pattern(/^[0-9]*$/), Validators.minLength(9), Validators.maxLength(9)]],
+    telefone: ['', [Validators.required,Validators.maxLength(11), Validators.maxLength(11)]],
     email: ['', [Validators.required, Validators.email]],
     assunto: ['', [Validators.required]],
     mensagem: ['', [Validators.required, Validators.maxLength(250)]]
@@ -23,7 +23,16 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {}
 
+  allowOnlyNumbers(event:KeyboardEvent){
+    const codigoTecla = event.keyCode;
+    if ((codigoTecla < 48 || codigoTecla > 57) && codigoTecla !== 8) {
+      event.preventDefault();
+    }
+  }
+
   enviarFormulario() {
+    console.log(this.contatoForm.value)
+    console.log(this.contatoForm)
     if (this.contatoForm.valid) {
       this.formService.enviarFormulario(this.contatoForm.value).subscribe(
         (response) => {

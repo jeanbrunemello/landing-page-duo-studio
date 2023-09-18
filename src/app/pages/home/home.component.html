@@ -38,8 +38,8 @@
                     <small class="form-erro"
                         *ngIf="contatoForm.get('telefone')?.invalid && (contatoForm.get('telefone')?.dirty || contatoForm.get('telefone')?.touched)">Informe
                         um telefone válido</small>
-                    <input class="form-control" type="number" placeholder="Telefone" formControlName="telefone"
-                        maxlength="9">
+                    <input class="form-control" type="text" mask="(00) 0-0000-0000" placeholder="Telefone" formControlName="telefone"
+                        maxlength="16" minlength="11" (keypress)="allowOnlyNumbers($event)">
                     <small class="form-erro"
                         *ngIf="contatoForm.get('email')?.invalid && (contatoForm.get('email')?.dirty || contatoForm.get('email')?.touched)">Insira
                         um email válido</small>

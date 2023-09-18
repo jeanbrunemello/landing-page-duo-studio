@@ -16,8 +16,6 @@ export class CatalogoComponent implements OnInit {
 
   ngOnInit(): void {
     this.getCatalogos();
-    //this.route.snapshot()
-
   }
 
   getActiveRoute() {

@@ -50,10 +50,12 @@
     }
 
     a:hover img{
-        animation: foldersScaleUp 0.3s ease-out forwards;
+        transform: scale(1.2);
     }
 
     img{
+        transform: scale(1);
+        transition: transform 0.3s;
         margin-bottom: 36px;
     }
 }
