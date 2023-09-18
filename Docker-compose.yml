@@ -16,7 +16,7 @@ services:
     ports: 
       - "3000:80" 
     volumes: 
-      - .\data\db.json:/data/db.json
+      - ./data/db.json:/data/db.json
     networks: 
       - mynetwork 
 
