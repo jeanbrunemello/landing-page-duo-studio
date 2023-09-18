@@ -10,7 +10,6 @@ import { FormServiceService } from 'src/app/services/form-service.service';
 export class HomeComponent implements OnInit {
 
   contatoForm: FormGroup = this.formBuilder.group({
-    id: 0,
     nome: ['', [Validators.required, Validators.minLength(3)]],
     telefone: ['', [Validators.required,Validators.maxLength(11), Validators.maxLength(11)]],
     email: ['', [Validators.required, Validators.email]],
